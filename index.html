@@ -4,10 +4,88 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Meetup</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./styles/common.css" />
     <link rel="stylesheet" href="./styles/main.css" />
   </head>
   <body>
-    <script src="./scripts/index.js"></script>
+    <header class="header">
+      <a id="homepage-link" class="logo" href="/">
+        <img src="./images/icons/logo.svg" alt="Meetup Logo" />
+      </a>
+
+      <div class="header-right">
+        <nav class="header-nav">
+          <button class="lang-btn">
+            <div class="lang-icon">
+              <img src="./images/icons/globe-icon.svg" alt="Language" />
+            </div>
+            <span class="lang-text">English</span>
+          </button>
+          <a class="nav-link nav-link-login" href="#">Log in</a>
+          <a class="nav-link nav-link-signup" href="#">Sign up</a>
+        </nav>
+      </div>
+
+      <form id="search-form" class="search-form">
+        <!-- Desktop Search Inputs (Two fields) -->
+
+        <div class="search-group search-group-desktop">
+          <div class="input-wrap desktop-keyword-wrap">
+            <div class="prefix-icon">
+              <img src="./images/icons/search-icon.svg" alt="Search" />
+            </div>
+            <input
+              id="keyword-bar-in-search"
+              type="search"
+              name="keywords"
+              placeholder="Search events"
+              autocomplete="on"
+              class="search-input"
+            />
+          </div>
+          <div class="input-wrap desktop-location-wrap">
+            <input
+              id="location-bar-in-search"
+              type="search"
+              name="location"
+              placeholder="Searching for location..."
+              class="search-input placeholder-default"
+            />
+          </div>
+        </div>
+
+        <!-- Mobile Search Input (One field) -->
+
+        <div class="search-group search-group-mobile">
+          <div class="input-wrap mobile-event-wrap">
+            <div class="prefix-icon">
+              <img src="./images/icons/search-icon.svg" alt="Search" />
+            </div>
+            <input
+              id="event-search-input"
+              type="search"
+              name="event_keywords"
+              placeholder="Search events"
+              autocomplete="on"
+              class="search-input"
+            />
+          </div>
+        </div>
+
+        <button id="search-submit-btn" class="search-submit" type="submit">
+          <div class="submit-icon">
+            <img src="./images/icons/search-icon.svg" alt="Submit Search" />
+          </div>
+        </button>
+      </form>
+    </header>
+
+    <script type="module" src="./scripts/index.js"></script>
   </body>
 </html>
