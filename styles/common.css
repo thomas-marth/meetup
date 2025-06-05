@@ -8,13 +8,11 @@
 
 :root {
   --color-bg-primary: #ffffff;
-  --color-border-gray2: #e0e0e0;
-  --color-border-gray3: #d9d9d9;
-  --color-text-gray6: #707070;
-  --color-text-gray7: #4f4f4f;
+  --color-text-primary: #212121;
+  --color-text-gray: #707070;
+  --color-border-gray: #d9d9d9;
   --color-accent: #00798a;
   --color-peach: #f65858;
-  --color-text-primary: #212121;
   --font-primary: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
@@ -51,13 +49,14 @@ a {
   position: sticky;
   top: 0;
   z-index: 2;
-  /* border-bottom: 1px solid var(--color-border-gray2); */
   padding: 11px 49px 11px 24px;
-  /* height: 64px; */
   display: flex;
   flex-wrap: nowrap;
   align-items: center;
   justify-content: flex-start;
+  /* box-shadow: 0px -1px 9px 3px rgba(0, 0, 0, 0);
+  -webkit-box-shadow: 0px -1px 9px 3px rgba(0, 0, 0, 0.035);
+  -moz-box-shadow: 0px -1px 9px 3px rgba(0, 0, 0, 0.35); */
 }
 
 .logo {
@@ -79,10 +78,7 @@ a {
 .header-nav {
   display: flex;
   align-items: center;
-}
-
-.header-nav > *:not(:last-child) {
-  margin-right: 1rem;
+  gap: 16px;
 }
 
 .search-form {
@@ -92,7 +88,7 @@ a {
   flex-grow: 1;
   max-width: 600px;
   margin-top: 0;
-  margin-left: 1.5rem;
+  margin-left: 40px;
   margin-right: 1.5rem;
 }
 
@@ -125,25 +121,25 @@ a {
   left: 12px;
   top: 50%;
   transform: translateY(-50%);
-  width: 20px;
-  height: 20px;
+  width: 22px;
+  height: 22px;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: var(--color-text-gray6);
+  color: var(--color-text-gray);
   z-index: 3;
 }
 
 .prefix-icon img {
-  width: 100%;
-  height: 100%;
+  width: 22px;
+  height: 22px;
   display: block;
 }
 
 .search-input {
   font-family: var(--font-primary);
   appearance: none;
-  border: 1px solid var(--color-border-gray3);
+  border: 1px solid var(--color-border-gray);
   padding: 12px;
   outline: none;
   width: 100%;
@@ -153,12 +149,11 @@ a {
 }
 
 .search-input::placeholder {
-  color: var(--color-text-gray6);
+  color: var(--color-text-gray);
 }
 
 .search-input:hover {
-  border-color: var(--color-text-gray6);
-  /* z-index: 2; */
+  border-color: var(--color-text-gray);
 }
 
 .search-input:focus {
@@ -191,8 +186,8 @@ input[type="search"]::-webkit-search-cancel-button {
 .search-group-mobile .search-input {
   padding-left: 40px;
   border-right: none;
-  border-top-left-radius: 4px;
-  border-bottom-left-radius: 4px;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
 }
 
 .search-submit {
@@ -237,12 +232,11 @@ input[type="search"]::-webkit-search-cancel-button {
   display: inline-flex;
   align-items: center;
   padding: 8px 12px;
-  border-radius: 4px;
   transition: all 0.2s ease;
 }
 
 .lang-btn {
-  color: var(--color-text-gray7);
+  color: var(--color-text-primary);
   background: none;
   border: none;
   cursor: pointer;
@@ -254,7 +248,7 @@ input[type="search"]::-webkit-search-cancel-button {
   margin-right: 6px;
   width: 18px;
   height: 18px;
-  color: var(--color-text-gray7);
+  color: var(--color-text-primary);
 }
 
 .lang-icon img {
@@ -264,7 +258,7 @@ input[type="search"]::-webkit-search-cancel-button {
 }
 
 .nav-link-login {
-  color: var(--color-text-gray7);
+  color: var(--color-text-primary);
 }
 
 .nav-link-login:hover {
@@ -275,13 +269,14 @@ input[type="search"]::-webkit-search-cancel-button {
   background-color: var(--color-accent);
   color: var(--color-bg-primary);
   padding: 8px 16px;
+  border-radius: 7px;
 }
 
 .nav-link-signup:hover {
   background-color: #005f6b;
 }
 
-@media (max-width: 1023px) {
+@media screen and (max-width: 1023px) {
   .header {
     padding: 12px 16px;
     height: auto;
@@ -289,13 +284,18 @@ input[type="search"]::-webkit-search-cancel-button {
     justify-content: space-between;
   }
 
-  .header-right {
-    order: 2;
+  .logo {
     margin-left: 0;
   }
-  .header-nav > *:not(:last-child) {
-    margin-right: 12px;
+
+  .header-right {
+    order: 2;
   }
+
+  .header-nav {
+    gap: 12px;
+  }
+
   .nav-link-signup {
     padding: 8px 12px;
   }
@@ -303,12 +303,13 @@ input[type="search"]::-webkit-search-cancel-button {
   .search-form {
     order: 3;
     width: 100%;
-    margin-top: 12px;
+    margin-top: 15px;
     margin-left: 0;
     margin-right: 0;
     max-width: none;
     flex-grow: 0;
   }
+
   .search-group-desktop {
     display: none;
   }
@@ -319,13 +320,17 @@ input[type="search"]::-webkit-search-cancel-button {
   }
 }
 
-@media (max-width: 380px) {
+@media screen and (max-width: 393px) {
   .lang-text {
     display: none;
   }
 
-  .header-nav > *:not(:last-child) {
-    margin-right: 6px;
+  .header {
+    position: static;
+  }
+
+  .header-nav {
+    gap: 6px;
   }
 
   .nav-link,
