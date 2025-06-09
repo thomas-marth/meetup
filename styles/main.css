@@ -886,11 +886,11 @@
     padding: 16px 0;
     border-top: 1px solid var(--color-border-gray);
   }
-
-  .event-image-overlay {
+  /* 
+  .image-overlay {
     width: 100px;
     flex-shrink: 0;
-  }
+  } */
 
   .event-image {
     /* aspect-ratio: 1 / 1; */
