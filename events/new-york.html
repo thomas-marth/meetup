@@ -3,7 +3,277 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Meetup: Events near New York, NY</title>
+    <meta
+      name="description"
+      content="Find Meetup events near New York City, where you can meet people who share your interests."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../styles/common.css" />
+    <link rel="stylesheet" href="../styles/new-york.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
   </head>
-  <body></body>
+  <body>
+    <header class="header">
+      <a id="homepage-link" class="logo" href="/">
+        <img src="../images/icons/logo.svg" alt="Meetup Logo" />
+      </a>
+
+      <div class="header-right">
+        <nav class="header-nav">
+          <button class="lang-btn">
+            <div class="lang-icon">
+              <img src="../images/icons/globe-icon.svg" alt="Language" />
+            </div>
+            <span class="lang-text">English</span>
+          </button>
+          <a class="nav-link nav-link-login" href="#">Log in</a>
+          <a class="nav-link nav-link-signup" href="#">Sign up</a>
+        </nav>
+      </div>
+
+      <form id="search-form" class="search-form">
+        <!-- Desktop Search Inputs (Two fields) -->
+
+        <div class="search-group search-group-desktop">
+          <div class="input-wrap desktop-keyword-wrap">
+            <div class="prefix-icon">
+              <img src="../images/icons/search-icon.svg" alt="Search" />
+            </div>
+            <input
+              id="keyword-bar-in-search"
+              type="search"
+              name="keywords"
+              placeholder="Search events"
+              autocomplete="on"
+              class="search-input"
+            />
+          </div>
+          <div class="input-wrap desktop-location-wrap">
+            <input
+              id="location-bar-in-search"
+              type="search"
+              name="location"
+              placeholder="Neighborhood, city or zip"
+              class="search-input placeholder-default"
+            />
+          </div>
+        </div>
+
+        <!-- Mobile Search Input (One field) -->
+
+        <div class="search-group search-group-mobile">
+          <div class="input-wrap mobile-event-wrap">
+            <div class="prefix-icon">
+              <img src="../images/icons/search-icon.svg" alt="Search" />
+            </div>
+            <input
+              id="event-search-input"
+              type="search"
+              name="event_keywords"
+              placeholder="Search events"
+              autocomplete="on"
+              class="search-input"
+            />
+          </div>
+        </div>
+
+        <button id="search-submit-btn" class="search-submit" type="submit">
+          <div class="submit-icon">
+            <img src="../images/icons/search-icon.svg" alt="Submit Search" />
+          </div>
+        </button>
+      </form>
+    </header>
+
+    <main>
+      <section class="events-section">
+        <div class="events-container">
+          <h1 class="events-page-title">Events near New York, NY</h1>
+          <a href="#" class="events-link">Events</a>
+          <div class="filters">
+            <div class="select-wrapper">
+              <select id="filter-type">
+                <option value="any">Any type</option>
+                <option value="online">Online</option>
+                <option value="offline">Offline</option>
+              </select>
+            </div>
+            <div class="select-wrapper">
+              <select id="filter-distance">
+                <option value="any">Any distance</option>
+                <option value="5">5 km</option>
+                <option value="10">10 km</option>
+                <option value="15">15 km</option>
+                <option value="25">25 km</option>
+                <option value="50">50 km</option>
+                <option value="75">75 km</option>
+                <option value="100">100 km</option>
+              </select>
+            </div>
+            <div class="select-wrapper">
+              <select id="filter-category">
+                <option value="any">Any category</option>
+                <option value="Technology">Technology</option>
+                <option value="Social Activities">Social Activities</option>
+                <option value="Hobbies and Passions">
+                  Hobbies and Passions
+                </option>
+                <option value="Health and Wellbeing">
+                  Health and Wellbeing
+                </option>
+                <option value="Business">Business</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="events-list"></div>
+        </div>
+
+        <div class="map-wrapper">
+          <h2 class="map-heading">Find events near</h2>
+          <p class="map-location-text">New York, NY</p>
+          <div class="map-panel">
+            <div id="map"></div>
+
+            <div class="map-promo-overlay">
+              <img
+                src="../images/map-thumbnail.png"
+                alt="Map background"
+                class="map-promo-bg"
+              />
+              <button id="show-map-btn" class="map-promo-button">
+                <span>Browse in map</span>
+                <img
+                  src="../images/icons/expandMapIcon.svg"
+                  alt="Expand map icon"
+                />
+              </button>
+            </div>
+
+            <button id="minimize-map-btn" class="minimize-map-button">
+              <span>Minimize map</span>
+
+              <img
+                src="../images/icons/minimizeMapIcon.svg"
+                alt="Minimize map icon"
+              />
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- =============== FOOTER =============== -->
+
+    <footer class="footer">
+      <div class="footer-top">
+        <div class="footer-container">
+          <div class="create-group">
+            <span class="create-text">Create your own Meetup group.</span>
+            <a href="#" class="btn-started">Get Started</a>
+          </div>
+
+          <div class="links-columns">
+            <div class="column">
+              <h4 class="column-title">Your Account</h4>
+              <ul class="column-list">
+                <li class="column-list-item"><a href="#">Sign up</a></li>
+                <li class="column-list-item"><a href="#">Log in</a></li>
+                <li class="column-list-item"><a href="#">Help</a></li>
+                <li class="column-list-item">
+                  <a href="#">Become an Affiliate</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="column">
+              <h4 class="column-title">Discover</h4>
+              <ul class="column-list">
+                <li class="column-list-item"><a href="#">Groups</a></li>
+                <li class="column-list-item"><a href="#">Calendar</a></li>
+                <li class="column-list-item"><a href="#">Topics</a></li>
+                <li class="column-list-item"><a href="#">Cities</a></li>
+                <li class="column-list-item"><a href="#">Online Events</a></li>
+                <li class="column-list-item"><a href="#">Local Guides</a></li>
+                <li class="column-list-item"><a href="#">Make Friends</a></li>
+              </ul>
+            </div>
+
+            <div class="column">
+              <h4 class="column-title">Meetup</h4>
+              <ul class="column-list">
+                <li class="column-list-item"><a href="#">About</a></li>
+                <li class="column-list-item"><a href="#">Blog</a></li>
+                <li class="column-list-item"><a href="#">Meetup Pro</a></li>
+                <li class="column-list-item"><a href="#">Careers</a></li>
+                <li class="column-list-item"><a href="#">Apps</a></li>
+                <li class="column-list-item"><a href="#">Podcast</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="social-and-apps">
+            <span class="social-title">Follow us</span>
+            <div class="social-apps-row">
+              <div class="social-icons">
+                <a href="#">
+                  <img src="../images/icons/Facebook.svg" alt="Facebook" />
+                </a>
+                <a href="#">
+                  <img src="../images/icons/Twitter.svg" alt="Twitter" />
+                </a>
+                <a href="#">
+                  <img src="../images/icons/YouTube.svg" alt="YouTube" />
+                </a>
+                <a href="#">
+                  <img src="../images/icons/Instagram.svg" alt="Instagram" />
+                </a>
+                <a href="#">
+                  <img src="../images/icons/TikTok.svg" alt="TikTok" />
+                </a>
+              </div>
+              <div class="app-badges">
+                <a href="#">
+                  <img
+                    src="../images/icons/Google-play.svg"
+                    alt="Get it on Google Play"
+                  />
+                </a>
+                <a href="#">
+                  <img
+                    src="../images/icons/Appstore.svg"
+                    alt="Download on the App Store"
+                  />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- FOOTER Bottom -->
+      <div class="footer-bottom">
+        <div class="footer-container footer-bottom-container">
+          <span class="copyright">© 2024 Meetup</span>
+          <nav class="bottom-links">
+            <a href="#">Terms of Service</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Do Not Sell or Share My Personal Data</a>
+            <a href="#">Cookie Policy</a>
+            <a href="#">Help</a>
+          </nav>
+        </div>
+      </div>
+    </footer>
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="../data/ny-data.js"></script>
+    <script src="../scripts/new-york.js"></script>
+    <script type="module" src="../scripts/index.js"></script>
+  </body>
 </html>
