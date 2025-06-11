@@ -12,39 +12,39 @@
 .hero {
   display: flex;
   align-items: center;
-  padding-top: 82px;
-  padding-bottom: 120px;
+  padding-top: 5.13rem;
+  padding-bottom: 7.5rem;
   width: 100%;
 }
 
 .hero-content {
-  max-width: 600px;
+  max-width: 37.5rem;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
 }
 
 .hero-title {
-  font-size: 42px;
+  font-size: 2.63rem;
   font-weight: 700;
   line-height: 1.2;
   color: var(--color-text-primary);
-  margin: 0 0 24px 0;
+  margin: 0 0 1.5rem 0;
   text-size-adjust: 100%;
 }
 
 .hero-description {
   font-family: var(--font-primary);
   font-weight: 400;
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 1.5;
   color: var(--color-text-primary);
-  margin: 0 0 32px 0;
+  margin: 0 0 2rem 0;
 }
 
 .hero-illustration {
   flex-shrink: 0;
-  margin-left: 40px;
+  margin-left: 2.5rem;
 }
 
 .hero-illustration img {
@@ -58,7 +58,7 @@
 /* ==================================== */
 
 .events-section {
-  margin-bottom: 40px;
+  margin-bottom: 2.5rem;
   font-family: var(--font-primary);
 }
 
@@ -67,21 +67,21 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 24px;
+  margin-bottom: 1.5rem;
   flex-wrap: wrap;
-  gap: 20px;
+  gap: 1.25rem;
 }
 
 .events-title-group {
   display: flex;
   align-items: center;
-  gap: 25px;
+  gap: 1.56rem;
   font-weight: 600;
 }
 
 .events-title {
   color: rgba(33, 33, 33, 1);
-  font-size: 28px;
+  font-size: 1.75rem;
   line-height: 1.29;
   margin: 0;
   font-weight: 600;
@@ -90,17 +90,17 @@
 .location-badge {
   background-color: rgba(151, 202, 209, 0.12);
   border-radius: 8px;
-  padding: 11px 12px;
+  padding: 0.69rem 0.75rem;
 }
 
 .location-link {
   display: flex;
   align-items: center;
-  gap: 26px;
+  gap: 1.63rem;
 }
 
 .location-text {
-  font-size: 20px;
+  font-size: 1.25rem;
   font-weight: 600;
   color: var(--color-accent);
   line-height: 1.2;
@@ -108,8 +108,8 @@
 }
 
 .location-icon {
-  width: 22px;
-  height: 22px;
+  width: 1.38rem;
+  height: 1.38rem;
   flex-shrink: 0;
 }
 
@@ -119,7 +119,7 @@
 
 .see-all-link {
   color: var(--color-accent);
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 500;
   text-decoration: none;
   margin: auto 0;
@@ -130,17 +130,17 @@
 }
 
 .online-events-header {
-  margin-bottom: 26px;
+  margin-bottom: 1.63rem;
 }
 
 .events-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 36px;
+  gap: 2.25rem;
 }
 
 .events-grid:not(:last-child) {
-  margin-bottom: 60px;
+  margin-bottom: 3.75rem;
 }
 
 .event-card {
@@ -149,10 +149,10 @@
   flex-direction: column;
   align-items: flex-start;
   font-family: var(--font-primary);
-  font-size: 14px;
+  font-size: 0.88rem;
   color: rgba(33, 33, 33, 1);
   font-weight: 400;
-  padding-bottom: 64px;
+  padding-bottom: 4rem;
   cursor: pointer;
   transition: all 0.2s ease;
   position: relative;
@@ -182,11 +182,11 @@
 
 .online-badge {
   position: absolute;
-  top: 8px;
-  left: 8px;
+  top: 0.5rem;
+  left: 0.5rem;
   background-color: rgba(255, 255, 255, 0.91);
   border-radius: 4px;
-  padding: 2px 4px;
+  padding: 0.13rem 0.25rem;
   display: flex;
   align-items: center;
   gap: 4px;
@@ -197,21 +197,21 @@
 }
 
 .online-icon {
-  width: 16px;
-  height: 16px;
+  width: 1rem;
+  height: 1rem;
   flex-shrink: 0;
 }
 
 .event-content {
-  padding: 16px 0 0 0;
+  padding: 1rem 0 0 0;
   width: 100%;
 }
 
 .event-title {
-  font-size: 20px;
+  font-size: 1.25rem;
   font-weight: 600;
-  line-height: 24px;
-  margin: 0 0 16px 0;
+  line-height: 1.5rem;
+  margin: 0 0 1rem 0;
   color: rgba(33, 33, 33, 1);
 }
 
@@ -219,19 +219,19 @@
   color: rgba(112, 112, 112, 1);
   font-weight: 500;
   line-height: 1.42;
-  margin-bottom: 14px;
+  margin-bottom: 0.88rem;
 }
 
 .event-meta {
   display: flex;
   flex-direction: column;
-  gap: 14px;
+  gap: 0.88rem;
 }
 
 .event-time {
   display: flex;
   align-items: center;
-  gap: 6px;
+  gap: 0.38rem;
   text-transform: uppercase;
   letter-spacing: -0.35px;
   line-height: 1.42;
@@ -240,20 +240,20 @@
 .event-details {
   display: flex;
   align-items: center;
-  gap: 21px;
-  font-size: 16px;
+  gap: 1.31rem;
+  font-size: 1rem;
 }
 
 .event-attendees,
 .event-price {
   display: flex;
   align-items: center;
-  gap: 6px;
+  gap: 0.38rem;
 }
 
 .meta-icon {
-  width: 20px;
-  height: 20px;
+  width: 1.25rem;
+  height: 1.25rem;
   flex-shrink: 0;
 }
 
@@ -264,9 +264,9 @@
 .join-meetup-section {
   background-color: var(--color-accent2);
   border-radius: 8px;
-  padding: 20px 56px;
-  margin-bottom: 64px;
-  height: 236px;
+  padding: 1.25rem 3.5rem;
+  margin-bottom: 4rem;
+  height: 14.75rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -276,42 +276,42 @@
 .join-meetup-content {
   display: flex;
   align-items: center;
-  gap: 74px;
+  gap: 4.63rem;
   width: 100%;
-  max-width: 1080px;
+  max-width: 67.5rem;
 }
 
 .join-meetup-text {
   flex: 1;
-  max-width: 665px;
+  max-width: 41.56rem;
 }
 
 .join-meetup-title {
-  font-size: 28px;
+  font-size: 1.75rem;
   font-weight: 700;
-  line-height: 36px;
+  line-height: 1.3;
   color: var(--color-text-primary);
-  margin-bottom: 16px;
+  margin-bottom: 1rem;
 }
 
 .join-meetup-description {
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 400;
-  line-height: 24px;
+  line-height: 1.5;
   color: var(--color-text-primary);
-  margin-bottom: 16px;
+  margin-bottom: 1rem;
 }
 
 .join-meetup-button {
   display: inline-flex;
-  padding: 8px 67px;
+  padding: 0.5rem 4.19rem;
   justify-content: center;
   align-items: center;
   border-radius: 8px;
   background: #e32359;
   color: var(--color-bg-primary);
   text-decoration: none;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
   text-align: center;
@@ -338,32 +338,32 @@
 /* ========================================= */
 
 .categories-section {
-  margin-bottom: 64px;
+  margin-bottom: 4rem;
 }
 
 .categories-title {
-  font-size: 28px;
+  font-size: 1.75rem;
   font-weight: 600;
   line-height: 1.3;
   color: var(--color-text-primary);
-  margin-bottom: 24px;
+  margin-bottom: 1.5rem;
 }
 
 .categories-grid {
   display: grid;
   grid-template-columns: repeat(8, 1fr);
-  gap: 16px;
+  gap: 1rem;
 }
 
 .category-card {
-  flex: 1 1 135px;
+  flex: 1 1 8.44rem;
   display: flex;
-  height: 112px;
-  padding: 22px 20px 16px 20px;
+  height: 7rem;
+  padding: 1.38rem 1.25rem 1rem 1.25rem;
   flex-direction: column;
   justify-content: flex-end;
   align-items: center;
-  gap: 6px;
+  gap: 0.38rem;
   border-radius: 8px;
   background: var(--color-accent2);
   text-decoration: none;
@@ -376,25 +376,25 @@
 }
 
 .category-icon {
-  width: 20px;
-  height: 20px;
+  width: 1.25rem;
+  height: 1.25rem;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .category-icon img {
-  width: 20px;
-  height: 20px;
+  width: 1.25rem;
+  height: 1.25rem;
 }
 
 .category-name {
   color: var(--color-text-primary);
   text-align: center;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 500;
   line-height: 1.5;
-  height: 48px;
+  height: 3rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -405,29 +405,29 @@
 /* ========================================= */
 
 .popular-cities-section {
-  margin-bottom: 64px;
+  margin-bottom: 4rem;
 }
 
 .popular-cities-title {
-  font-size: 28px;
+  font-size: 1.75rem;
   font-weight: 600;
   line-height: 1.3;
   color: var(--color-text-primary);
-  margin-bottom: 16px;
+  margin-bottom: 1rem;
 }
 
 .popular-cities-description {
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
   color: var(--color-text-gray);
-  margin-bottom: 28px;
-  max-width: 831px;
+  margin-bottom: 1.75rem;
+  max-width: 51.94rem;
 }
 
 .cities-grid {
   display: flex;
-  gap: 42px;
+  gap: 2.63rem;
   align-items: flex-start;
   justify-content: center;
 }
@@ -440,8 +440,8 @@
   transition: all 0.2s ease;
 
   flex: 1 1 0;
-  max-width: 205px;
-  min-width: 140px;
+  max-width: 12.81rem;
+  min-width: 8.75rem;
 }
 
 .city-card:hover .image-overlay {
@@ -457,13 +457,13 @@
   aspect-ratio: 1 / 1;
   border-radius: 50%;
   object-fit: cover;
-  margin-bottom: 24px;
+  margin-bottom: 1.5rem;
 }
 
 .city-name {
   color: var(--color-text-primary);
   text-align: center;
-  font-size: 20px;
+  font-size: 1.25rem;
   font-weight: 600;
   line-height: 1.4;
   margin: 0;
@@ -473,31 +473,31 @@
 /* ========================================= */
 
 .how-it-works-section {
-  margin-bottom: 64px;
+  margin-bottom: 4rem;
 }
 
 .how-it-works-title {
-  font-size: 28px;
+  font-size: 1.75rem;
   font-weight: 600;
   line-height: 1.3;
   color: var(--color-text-primary);
-  margin-bottom: 16px;
+  margin-bottom: 1rem;
 }
 
 .how-it-works-grid {
   display: flex;
-  gap: 32px;
+  gap: 2rem;
 }
 
 .how-it-works-card {
   display: flex;
-  padding: 32px 129px 24px 24px;
+  padding: 2rem 8.06rem 1.5rem 1.5rem;
   align-items: flex-start;
-  gap: 24px;
+  gap: 1.5rem;
   border-radius: 8px;
   background: var(--color-accent2);
-  width: 580px;
-  height: 180px;
+  width: 36.25rem;
+  height: 11.25rem;
   box-sizing: border-box;
   text-decoration: none;
   transition: all 0.2s ease;
@@ -508,8 +508,8 @@
 }
 
 .how-it-works-icon {
-  width: 41px;
-  height: 41px;
+  width: 2.56rem;
+  height: 2.56rem;
   flex-shrink: 0;
   display: flex;
   justify-content: center;
@@ -517,29 +517,29 @@
 }
 
 .how-it-works-icon img {
-  width: 41px;
-  height: 41px;
+  width: 2.56rem;
+  height: 2.56rem;
 }
 
 .how-it-works-content {
   flex: 1;
   display: flex;
   flex-direction: column;
-  gap: 16px;
-  height: 124px;
+  gap: 1rem;
+  height: 7.75rem;
   justify-content: center;
 }
 
 .how-it-works-card-title {
-  font-size: 20px;
+  font-size: 1.25rem;
   font-weight: 700;
-  line-height: 24px;
+  line-height: 1.2;
   color: var(--color-text-primary);
   margin: 0;
 }
 
 .how-it-works-card-description {
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
   color: var(--color-text-primary);
@@ -547,7 +547,7 @@
 }
 
 .how-it-works-link {
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
   color: var(--color-accent);
@@ -557,34 +557,34 @@
 /* ========================================= */
 
 .friendships-section {
-  margin-bottom: 64px;
+  margin-bottom: 4rem;
 }
 
 .friendships-title {
-  font-size: 28px;
+  font-size: 1.75rem;
   font-weight: 600;
   line-height: 1.3;
   color: var(--color-text-primary);
-  margin-bottom: 16px;
+  margin-bottom: 1rem;
 }
 
 .friendships-description {
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
   color: var(--color-text-gray);
-  margin-bottom: 28px;
+  margin-bottom: 1.75rem;
   max-width: 893px;
 }
 
 .friendships-grid {
   display: flex;
-  gap: 32px;
+  gap: 2rem;
 }
 
 .friendship-article {
   flex: 1;
-  max-width: 376px;
+  max-width: 23.5rem;
 }
 
 .friendship-article:hover .image-overlay {
@@ -606,32 +606,32 @@
   height: 192px;
   border-radius: 8px;
   object-fit: cover;
-  margin-bottom: 20px;
+  margin-bottom: 1.25rem;
 }
 
 .article-title {
-  font-size: 18px;
+  font-size: 1.13rem;
   font-weight: 600;
   line-height: 1.55;
   color: var(--color-text-primary);
-  margin: 0 0 12px 0;
-  height: 56px;
+  margin: 0 0 0.75rem 0;
+  height: 3.5rem;
   display: flex;
   align-items: center;
 }
 
 .article-excerpt {
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 400;
-  line-height: 24px;
+  line-height: 1.5;
   color: var(--color-text-gray);
-  margin: 0 0 16px 0;
+  margin: 0 0 1rem 0;
 }
 
 .article-link {
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 400;
-  line-height: 24px;
+  line-height: 1.5rem;
   color: var(--color-accent);
   text-decoration: none;
 }
@@ -653,17 +653,17 @@
 
   .events-grid {
     grid-template-columns: repeat(3, 1fr);
-    gap: 24px;
+    gap: 1.5rem;
   }
 
   .events-title-group {
-    gap: 20px;
+    gap: 1.25rem;
   }
 
   .location-badge {
-    gap: 20px;
+    gap: 1.25rem;
     font-size: 1.13rem;
-    padding: 10px;
+    padding: 0.63rem;
   }
 
   /* ==== Categories ==== */
@@ -675,25 +675,25 @@
   /* ===== Popular cities ===== */
 
   .cities-grid {
-    gap: 32px;
+    gap: 2rem;
   }
 
   /* ===== How it works ===== */
 
   .how-it-works-grid {
     flex-direction: column;
-    gap: 24px;
+    gap: 1.5rem;
   }
 
   .how-it-works-card {
     width: 100%;
-    padding: 24px 80px 20px 20px;
+    padding: 1.5rem 5rem 1.25rem 1.25rem;
   }
 
   /* ===== Friendships ===== */
 
   .friendships-grid {
-    gap: 24px;
+    gap: 1.5rem;
   }
 }
 
@@ -723,8 +723,8 @@
   }
 
   .hero-illustration {
-    margin-top: 40px;
-    margin-left: 24px;
+    margin-top: 2.5rem;
+    margin-left: 1.5rem;
   }
 
   .hero-illustration img {
@@ -757,43 +757,43 @@
   }
 
   .location-badge {
-    font-size: 16px;
-    gap: 16px;
+    font-size: 1rem;
+    gap: 1rem;
   }
 
   .location-icon {
-    width: 18px;
-    height: 18px;
+    width: 1.13rem;
+    height: 1.13rem;
   }
 
   .events-grid {
     grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
+    gap: 1.25rem;
   }
 
   /* ===== Join Meetup ===== */
 
   .join-meetup-section {
-    padding: 24px 32px;
+    padding: 1.5rem 2rem;
     height: auto;
     margin-bottom: 5rem;
   }
 
   .join-meetup-content {
     flex-direction: column;
-    gap: 32px;
+    gap: 2rem;
     text-align: center;
   }
 
   .join-meetup-illustration {
-    width: 280px;
-    height: 160px;
+    width: 17.5rem;
+    height: 10rem;
   }
 
   /* ===== Categories ===== */
 
   .categories-section {
-    margin-bottom: 80px;
+    margin-bottom: 5rem;
   }
 
   .categories-grid {
@@ -803,27 +803,27 @@
   /* ===== Popular cities ===== */
 
   .popular-cities-section {
-    margin-bottom: 80px;
+    margin-bottom: 5rem;
   }
 
   .cities-grid {
     flex-wrap: wrap;
-    gap: 24px;
+    gap: 1.5rem;
   }
 
   .city-card {
-    flex: 0 1 160px;
+    flex: 0 1 10rem;
   }
 
   .city-image {
-    width: 160px;
-    height: 160px;
+    width: 10rem;
+    height: 10rem;
   }
 
   /* ===== How it works ===== */
 
   .how-it-works-section {
-    margin-bottom: 80px;
+    margin-bottom: 5rem;
   }
 
   /* ===== Friendships ===== */
@@ -837,7 +837,7 @@
   }
 
   .friendships-section {
-    margin-bottom: 100px;
+    margin-bottom: 6.25rem;
   }
 }
 
@@ -851,8 +851,8 @@
     flex-direction: column;
     align-items: center;
 
-    padding-top: 32px;
-    padding-bottom: 32px;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
   }
 
   .hero-illustration {
@@ -868,11 +868,11 @@
   /* ===== Events ===== */
 
   .events-section {
-    margin-bottom: 60px;
+    margin-bottom: 3.75rem;
   }
 
   .events-header {
-    margin-bottom: 10px;
+    margin-bottom: 0.63rem;
   }
 
   .events-grid {
@@ -881,19 +881,13 @@
 
   .event-card {
     flex-direction: row;
-    align-items: center;
-    gap: 16px;
-    padding: 16px 0;
+    align-items: start;
+    gap: 1rem;
+    padding: 1rem 0;
     border-top: 1px solid var(--color-border-gray);
   }
-  /* 
-  .image-overlay {
-    width: 100px;
-    flex-shrink: 0;
-  } */
 
   .event-image {
-    /* aspect-ratio: 1 / 1; */
     object-fit: cover;
     border-radius: 8px;
   }
@@ -911,9 +905,9 @@
   }
 
   .event-title {
-    font-size: 16px;
+    font-size: 1rem;
     line-height: 1.4;
-    margin-bottom: 4px;
+    margin-bottom: 0.25rem;
   }
 
   .event-title br {
@@ -921,33 +915,33 @@
   }
 
   .event-category {
-    margin-bottom: 8px;
-    font-size: 14px;
+    margin-bottom: 0.5rem;
+    font-size: 0.88rem;
   }
 
   .event-meta {
-    gap: 6px;
-    font-size: 13px;
+    gap: 0.38rem;
+    font-size: 0.81rem;
   }
 
   .event-details {
-    gap: 12px;
-    font-size: 13px;
+    gap: 0.75rem;
+    font-size: 0.81rem;
   }
 
   .meta-icon {
-    width: 16px;
-    height: 16px;
+    width: 1rem;
+    height: 1rem;
   }
 
   .events-title {
-    font-size: 22px;
+    font-size: 1.38rem;
   }
 
   .events-title-group {
     flex-direction: row;
     align-items: center;
-    gap: 16px;
+    gap: 1rem;
     width: 100%;
   }
 
@@ -956,7 +950,7 @@
   }
 
   .location-link {
-    gap: 14px;
+    gap: 0.88rem;
   }
 
   .see-all-link {
@@ -966,46 +960,46 @@
   /* ===== Join Meetup ===== */
 
   .join-meetup-section {
-    padding: 20px 16px;
-    margin-bottom: 60px;
+    padding: 1.25rem 1rem;
+    margin-bottom: 3.75rem;
   }
 
   .join-meetup-title {
-    font-size: 24px;
+    font-size: 1.5rem;
   }
 
   .join-meetup-description {
-    font-size: 14px;
+    font-size: 0.88rem;
   }
 
   /* ===== Categories ===== */
 
   .categories-section {
-    margin-bottom: 60px;
+    margin-bottom: 3.75rem;
   }
 
   .categories-title {
-    font-size: 24px;
-    margin-bottom: 40px;
+    font-size: 1.5rem;
+    margin-bottom: 2.5rem;
   }
 
   .categories-grid {
     grid-template-columns: repeat(2, 1fr);
-    gap: 12px;
+    gap: 0.75rem;
   }
 
   /* ===== Popular cities ===== */
 
   .popular-cities-section {
-    margin-bottom: 60px;
+    margin-bottom: 3.75rem;
   }
 
   .popular-cities-title {
-    font-size: 24px;
+    font-size: 1.5rem;
   }
 
   .cities-grid {
-    gap: 20px;
+    gap: 1.25rem;
   }
 
   .city-image {
@@ -1014,48 +1008,48 @@
   }
 
   .city-name {
-    font-size: 18px;
+    font-size: 1.13rem;
   }
 
   /* ===== How it works ===== */
 
   .how-it-works-section {
-    margin-bottom: 60px;
+    margin-bottom: 3.75rem;
   }
 
   .how-it-works-card {
-    padding: 20px;
+    padding: 1.25rem;
     height: auto;
-    gap: 16px;
+    gap: 1rem;
   }
 
   .how-it-works-card-title {
-    font-size: 18px;
+    font-size: 1.13rem;
   }
 
   /* ===== Friendships ===== */
 
   .friendships-title {
-    font-size: 24px;
+    font-size: 1.5rem;
   }
 
   .friendships-section {
-    margin-bottom: 80px;
+    margin-bottom: 5rem;
   }
 }
 
 @media screen and (max-width: 393px) {
   .container {
-    padding-left: 16px;
-    padding-right: 16px;
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
 
   .hero {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 18px;
-    padding-bottom: 20px;
+    padding-top: 1.13rem;
+    padding-bottom: 1.25rem;
   }
 
   .hero-content {
@@ -1064,13 +1058,13 @@
   }
 
   .hero-title {
-    font-size: 25px;
+    font-size: 1.56rem;
     line-height: 1.2;
-    margin: 0 0 20px 0;
+    margin: 0 0 1.25rem 0;
   }
 
   .hero-description {
-    font-size: 12px;
+    font-size: 0.75rem;
     line-height: 2;
     margin: 0;
   }
@@ -1086,16 +1080,16 @@
   /* ===== Events ===== */
 
   .events-section {
-    margin-bottom: 48px;
+    margin-bottom: 3rem;
   }
 
   .events-title {
-    font-size: 20px;
+    font-size: 1.25rem;
   }
 
   .location-badge {
-    font-size: 14px;
-    padding: 8px 10px;
+    font-size: 0.88rem;
+    padding: 0.5rem 0.63rem;
     gap: 12px;
   }
 
@@ -1105,12 +1099,13 @@
   }
 
   .location-icon {
-    width: 16px;
-    height: 16px;
+    width: 1rem;
+    height: 1rem;
   }
 
   .event-card {
     padding: 14px 0;
+    align-items: center;
   }
 
   .event-image {
@@ -1119,26 +1114,26 @@
   }
 
   .event-title {
-    font-size: 14px;
+    font-size: 0.88rem;
     line-height: 1.2;
   }
 
   .event-category {
-    font-size: 12px;
-    margin-bottom: 4px;
+    font-size: 0.75rem;
+    margin-bottom: 0.25rem;
   }
 
   .event-time {
-    font-size: 12px;
+    font-size: 0.75rem;
   }
 
   .event-details {
-    gap: 16px;
-    font-size: 12px;
+    gap: 1rem;
+    font-size: 0.75rem;
   }
 
   .event-meta {
-    gap: 4px;
+    gap: 0.25rem;
   }
 
   .meta-icon {
@@ -1149,7 +1144,7 @@
   /* ===== Join Meetup ===== */
 
   .join-meetup-section {
-    margin-bottom: 48px;
+    margin-bottom: 3rem;
   }
 
   .join-meetup-illustration {
@@ -1160,7 +1155,7 @@
   /* ===== Categories ===== */
 
   .categories-section {
-    margin-bottom: 48px;
+    margin-bottom: 3rem;
   }
 
   /* ===== Popular cities ===== */
@@ -1171,29 +1166,24 @@
   }
 
   .popular-cities-section {
-    margin-bottom: 48px;
+    margin-bottom: 3rem;
   }
 
   /* ===== How it works ===== */
 
   .how-it-works-section {
-    margin-bottom: 48px;
-  }
-
-  .how-it-works-icon {
-    width: 32px;
-    height: 32px;
+    margin-bottom: 3rem;
   }
 
   .how-it-works-icon img {
-    width: 32px;
-    height: 32px;
+    width: 2rem;
+    height: 2rem;
   }
 
   /* ===== Friendships ===== */
 
   .friendships-section {
-    margin-bottom: 60px;
+    margin-bottom: 3.75rem;
   }
 
   .friendships-description {

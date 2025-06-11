@@ -38,8 +38,8 @@ a {
 
 .container {
   margin: 0 auto;
-  padding-right: 15px;
-  padding-left: 15px;
+  padding-right: 0.94rem;
+  padding-left: 0.94rem;
   max-width: 1226px;
 }
 
@@ -50,7 +50,7 @@ a {
   position: sticky;
   top: 0;
   z-index: 2;
-  padding: 11px 49px 11px 24px;
+  padding: 0.69rem 3.06rem 0.69rem 1.5rem;
   display: flex;
   flex-wrap: nowrap;
   align-items: center;
@@ -89,7 +89,7 @@ a {
   flex-grow: 1;
   max-width: 600px;
   margin-top: 0;
-  margin-left: 40px;
+  margin-left: 2.5rem;
   margin-right: 1.5rem;
 }
 
@@ -119,7 +119,7 @@ a {
 
 .prefix-icon {
   position: absolute;
-  left: 12px;
+  left: 0.75rem;
   top: 50%;
   transform: translateY(-50%);
   width: 22px;
@@ -141,7 +141,7 @@ a {
   font-family: var(--font-primary);
   appearance: none;
   border: 1px solid var(--color-border-gray);
-  padding: 12px;
+  padding: 0.75rem;
   outline: none;
   width: 100%;
   flex-grow: 1;
@@ -172,20 +172,20 @@ input[type="search"]::-webkit-search-cancel-button {
 }
 
 .search-group-desktop #keyword-bar-in-search {
-  padding-left: 40px;
+  padding-left: 2.5rem;
   border-right: none;
   border-top-left-radius: 8px;
   border-bottom-left-radius: 8px;
 }
 
 .search-group-desktop #location-bar-in-search {
-  padding-left: 12px;
+  padding-left: 0.75rem;
   border-right: none;
   border-radius: 0;
 }
 
 .search-group-mobile .search-input {
-  padding-left: 40px;
+  padding-left: 2.5rem;
   border-right: none;
   border-top-left-radius: 8px;
   border-bottom-left-radius: 8px;
@@ -196,7 +196,7 @@ input[type="search"]::-webkit-search-cancel-button {
   align-items: center;
   justify-content: center;
   background-color: var(--color-peach);
-  padding: 12px;
+  padding: 0.75rem;
   border: 1px solid var(--color-peach);
   border-top-right-radius: 8px;
   border-bottom-right-radius: 8px;
@@ -210,8 +210,8 @@ input[type="search"]::-webkit-search-cancel-button {
 }
 
 .submit-icon {
-  width: 20px;
-  height: 20px;
+  width: 1.25rem;
+  height: 1.25rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -298,33 +298,33 @@ input[type="search"]::-webkit-search-cancel-button {
 /* ===== Create your own Meetup group ===== */
 
 .footer-top {
-  padding: 24px 0 24px;
+  padding: 1.5rem 0 1.5rem;
 }
 
 .create-group {
   display: flex;
   justify-content: start;
   align-items: center;
-  margin-bottom: 24px;
-  padding-bottom: 25px;
-  gap: 40px;
+  margin-bottom: 1.5rem;
+  padding-bottom: 1.56rem;
+  gap: 2.5rem;
   border-bottom: 1px solid var(--color-text-gray);
 }
 
 .create-text {
   color: var(--footer-text-light);
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 600;
   line-height: 1.5;
 }
 
 .btn-started {
-  padding: 10px 14px;
+  padding: 0.63rem 0.88rem;
   border: 2px solid var(--color-bg-primary);
   border-radius: 6px;
   background: none;
   color: var(--color-bg-primary);
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 600;
   line-height: 1.5;
   transition: background-color 0.2s ease, color 0.2s ease;
@@ -338,7 +338,6 @@ input[type="search"]::-webkit-search-cancel-button {
 .links-columns {
   display: flex;
   flex-wrap: nowrap;
-  /* gap: 48px; */
   overflow-x: auto;
   -ms-overflow-style: none;
   scrollbar-width: none;
@@ -351,23 +350,22 @@ input[type="search"]::-webkit-search-cancel-button {
 
 .column {
   flex: 1 1 0;
-  /* min-width: 180px; */
 }
 
 .column-title {
   color: var(--footer-text-light);
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
-  margin-bottom: 7px;
+  margin-bottom: 0.44rem;
 }
 
 .column-list-item {
-  margin-bottom: 7px;
+  margin-bottom: 0.44rem;
 }
 
 .column-list-item a {
-  font-size: 14px;
+  font-size: 0.88rem;
   line-height: 1.4;
   color: var(--footer-text);
   white-space: nowrap;
@@ -381,12 +379,12 @@ input[type="search"]::-webkit-search-cancel-button {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 32px;
+  gap: 2rem;
 }
 
 .social-title {
   display: block;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
   color: var(--footer-text-light);
@@ -395,12 +393,12 @@ input[type="search"]::-webkit-search-cancel-button {
 
 .social-icons {
   display: flex;
-  gap: 32px;
+  gap: 2rem;
 }
 
 .social-icons a img {
-  width: 30px;
-  height: 30px;
+  width: 1.88rem;
+  height: 1.88rem;
   transition: opacity 0.2s ease;
 }
 
@@ -410,12 +408,12 @@ input[type="search"]::-webkit-search-cancel-button {
 
 .app-badges {
   display: flex;
-  gap: 12px;
+  gap: 0.75rem;
 }
 
 .app-badges a img {
   display: inline-block;
-  height: 40px;
+  height: 2.5rem;
   transition: opacity 0.2s ease;
 }
 
@@ -424,7 +422,7 @@ input[type="search"]::-webkit-search-cancel-button {
 }
 
 .footer-bottom {
-  padding: 24px 0 40px 0;
+  padding: 1.5rem 0 2.5rem 0;
 }
 
 .footer-bottom-container {
@@ -436,7 +434,7 @@ input[type="search"]::-webkit-search-cancel-button {
 }
 
 .footer-bottom-container .copyright {
-  font-size: 14px;
+  font-size: 0.88rem;
   font-weight: 400;
   line-height: 1.4;
   color: var(--color-bg-primary);
@@ -445,11 +443,11 @@ input[type="search"]::-webkit-search-cancel-button {
 .bottom-links {
   display: flex;
   flex-wrap: wrap;
-  gap: clamp(8px, 2vw, 24px);
+  gap: clamp(0.5rem, 2vw, 1.5rem);
 }
 
 .bottom-links a {
-  font-size: clamp(8px, 2vw, 14px);
+  font-size: clamp(0.5rem, 2vw, 0.88rem);
   color: var(--footer-text);
 }
 
@@ -459,7 +457,7 @@ input[type="search"]::-webkit-search-cancel-button {
 
 @media screen and (max-width: 1023px) {
   .header {
-    padding: 12px 16px;
+    padding: 0.75rem 1rem;
     height: auto;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -474,17 +472,17 @@ input[type="search"]::-webkit-search-cancel-button {
   }
 
   .header-nav {
-    gap: 12px;
+    gap: 0.75rem;
   }
 
   .nav-link-signup {
-    padding: 8px 12px;
+    padding: 0.5rem 0.75rem;
   }
 
   .search-form {
     order: 3;
     width: 100%;
-    margin-top: 15px;
+    margin-top: 0.94rem;
     margin-left: 0;
     margin-right: 0;
     max-width: none;
@@ -503,10 +501,10 @@ input[type="search"]::-webkit-search-cancel-button {
 
 @media (max-width: 720px) {
   .create-group {
-    gap: clamp(4px, 6vw, 40px);
+    gap: clamp(0.25rem, 6vw, 2.5rem);
   }
   .social-apps-row {
-    gap: 18px;
+    gap: 1.13rem;
   }
 
   .social-icons {
@@ -522,10 +520,10 @@ input[type="search"]::-webkit-search-cancel-button {
 
   .links-columns {
     /* flex-wrap: wrap; */
-    gap: 24px;
+    gap: 1.5rem;
     overflow-x: visible;
     padding: 0;
-    margin-bottom: 36px;
+    margin-bottom: 2.25rem;
   }
 
   .column {
@@ -539,7 +537,7 @@ input[type="search"]::-webkit-search-cancel-button {
   }
 
   .social-icons {
-    gap: 32px;
+    gap: 2rem;
   }
 }
 
@@ -570,36 +568,36 @@ input[type="search"]::-webkit-search-cancel-button {
   }
 
   .create-group {
-    margin-bottom: 34px;
+    margin-bottom: 2.13rem;
   }
 
   .create-text {
-    font-size: clamp(10px, 4vw, 14px);
+    font-size: clamp(0.63rem, 4vw, 0.88rem);
   }
 
   .btn-started {
-    font-size: clamp(8px, 4.5vw, 16px);
-    padding-top: clamp(6px, 2vw, 10px);
-    padding-right: clamp(10px, 2vw, 14px);
+    font-size: clamp(0.5rem, 4.5vw, 1rem);
+    padding-top: clamp(0.38rem, 2vw, 0.63rem);
+    padding-right: clamp(0.63rem, 2vw, 0.88rem);
     padding-bottom: clamp(6px, 2vw, 10px);
-    padding-left: clamp(10px, 2vw, 14px);
+    padding-left: clamp(0.63rem, 2vw, 0.88rem);
   }
 
   .links-columns {
-    margin-bottom: 16px;
+    margin-bottom: 1rem;
   }
 
   .column-title {
-    font-size: 15px;
-    margin-bottom: 10px;
+    font-size: 0.94rem;
+    margin-bottom: 0.63rem;
   }
 
   .column-list-item a {
-    font-size: 14px;
+    font-size: 0.88rem;
   }
 
   .social-icons {
-    gap: 32px;
+    gap: 2rem;
     margin-bottom: 0;
   }
 
