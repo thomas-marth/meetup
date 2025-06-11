@@ -34,13 +34,29 @@
 }
 
 .filters {
-  display: flex;
-  gap: 8px;
   margin-bottom: 56px;
+  padding-bottom: 20px;
   /* overflow-x: auto; */
 
   /* -ms-overflow-style: none; */
   /* scrollbar-width: none; */
+}
+
+.filters .simplebar-content {
+  display: flex;
+  gap: 8px;
+  margin-left: -4px !important;
+  padding-top: 4px !important;
+}
+
+.filters .simplebar-scrollbar::before {
+  background-color: var(--color-accent);
+  opacity: 0.8;
+}
+
+.filters .simplebar-track.simplebar-horizontal {
+  height: 12px;
+  bottom: 2px;
 }
 
 .filters::-webkit-scrollbar {
@@ -50,6 +66,7 @@
 .select-wrapper {
   position: relative;
   flex-shrink: 0;
+  margin-bottom: 4px;
   cursor: pointer;
 }
 
@@ -62,23 +79,6 @@
   background: #f6f7f8;
   border: none;
   cursor: pointer;
-  appearance: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-}
-
-.select-wrapper {
-  position: relative;
-}
-
-.select-wrapper select {
-  max-width: 148px;
-  color: var(--color-text-primary);
-  padding: 16px 40px 16px 16px;
-  font-size: 14px;
-  border-radius: 40px;
-  background: #f6f7f8;
-  border: none;
   appearance: none;
   -webkit-appearance: none;
   -moz-appearance: none;

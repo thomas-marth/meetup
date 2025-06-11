@@ -17,6 +17,10 @@
     <link rel="stylesheet" href="../styles/common.css" />
     <link rel="stylesheet" href="../styles/new-york.css" />
     <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/simplebar@latest/dist/simplebar.css"
+    />
   </head>
   <body>
     <header class="header">
@@ -96,7 +100,7 @@
         <div class="events-container">
           <h1 class="events-page-title">Events near New York, NY</h1>
           <a href="#" class="events-link">Events</a>
-          <div class="filters">
+          <div class="filters" data-simplebar>
             <div class="select-wrapper">
               <select id="filter-type">
                 <option value="any">Any type</option>
@@ -271,6 +275,10 @@
         </div>
       </div>
     </footer>
+    <script
+      src="https://unpkg.com/simplebar@latest/dist/simplebar.min.js"
+      defer
+    ></script>
     <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
     <script src="../data/ny-data.js"></script>
     <script src="../scripts/new-york.js"></script>
