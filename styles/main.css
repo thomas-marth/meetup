@@ -1175,6 +1175,22 @@
     margin-bottom: 3rem;
   }
 
+  .how-it-works-content {
+    gap: 0.63rem;
+  }
+
+  .how-it-works-card-title {
+    font-size: 18px;
+  }
+
+  .how-it-works-card-description {
+    font-size: 14px;
+  }
+
+  .how-it-works-link {
+    font-size: 14px;
+  }
+
   .how-it-works-icon img {
     width: 2rem;
     height: 2rem;
