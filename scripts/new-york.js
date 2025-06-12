@@ -18,10 +18,10 @@ async function fetchEvents() {
     const resp = await fetch("../data/ny-events.json");
     if (!resp.ok) throw new Error("Network response was not ok");
     const data = await resp.json();
-    await new Promise((res) => setTimeout(res, 800));
+    await new Promise((res) => setTimeout(res, 200));
     eventsData = data.map((ev) => ({ ...ev, date: new Date(ev.date) }));
   } catch (err) {
-    console.log("Failed to fetch events, using fallback", err);
+    console.log("Failed to fetch events", err);
     if (typeof eventsStore !== "undefined") {
       eventsData = eventsStore;
     }

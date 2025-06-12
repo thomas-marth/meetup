@@ -62,6 +62,7 @@
 
 .filters .simplebar-content {
   display: flex;
+  flex-direction: row;
   gap: 17px;
   margin-left: -13px !important;
   padding-top: 4px !important;
