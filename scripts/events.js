@@ -16,11 +16,19 @@ let eventsData = [];
 
 async function fetchEvents() {
   try {
-    const resp = await fetch("../data/ny-events.json");
+    const resp = await fetch("../data/events.json");
     if (!resp.ok) throw new Error("Network response was not ok");
     const data = await resp.json();
+
+    const slug = window.location.pathname
+      .split("/")
+      .pop()
+      .replace(/\.html$/, "");
+
+    const filtered = data.filter((ev) => ev.city === slug);
+
     await new Promise((res) => setTimeout(res, 200));
-    eventsData = data.map((ev) => ({ ...ev, date: new Date(ev.date) }));
+    eventsData = filtered.map((ev) => ({ ...ev, date: new Date(ev.date) }));
   } catch (err) {
     console.log("Failed to fetch events", err);
     if (typeof eventsStore !== "undefined") {
@@ -71,7 +79,13 @@ let markers = [];
 let mapInitialized = false;
 
 function initMap() {
-  map = L.map(mapContainer).setView([40.73, -73.93], 11);
+  let center = [40.73, -73.93];
+  const firstWithCoords = eventsData.find((e) => e.coords);
+  if (firstWithCoords) {
+    center = [firstWithCoords.coords.lat, firstWithCoords.coords.lng];
+  }
+
+  map = L.map(mapContainer).setView(center, 11);
   L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
     attribution: "© OpenStreetMap contributors",
   }).addTo(map);

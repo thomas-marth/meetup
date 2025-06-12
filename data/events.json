@@ -1,0 +1,226 @@
+[
+  {
+    "id": 1,
+    "title": "Day Trading Idea and Strategy",
+    "description": "Day Trading Idea and Strategy",
+    "date": "2024-03-19T02:00:00.000Z",
+    "image": "./images/events/day-trading.webp",
+    "type": "offline",
+    "attendees": 1,
+    "category": "Business",
+    "distance": 5,
+    "coords": {
+      "lat": 37.39,
+      "lng": -122.0819
+    },
+    "city": "mountain-view"
+  },
+  {
+    "id": 2,
+    "title": "Let's Talk Networking: JPMorgan Chase in Palo Alto",
+    "description": "Let's Talk Networking: JPMorgan Chase in Palo Alto",
+    "date": "2024-03-20T00:00:00.000Z",
+    "image": "./images/events/jpmorgan-networking.webp",
+    "type": "offline",
+    "attendees": 41,
+    "category": "Business",
+    "distance": 25,
+    "coords": {
+      "lat": 37.4419,
+      "lng": -122.143
+    },
+    "city": "mountain-view"
+  },
+  {
+    "id": 3,
+    "title": "Tech Talks & Quiz: Next-Gen Database Solutions for Emerging Use Cases",
+    "description": "Tech Talks & Quiz: Next-Gen Database Solutions for Emerging Use Cases",
+    "date": "2024-03-14T01:00:00.000Z",
+    "image": "./images/events/tech-talks-database.webp",
+    "type": "online",
+    "attendees": 40,
+    "category": "Technology",
+    "distance": 0,
+    "coords": {
+      "lat": 37.3861,
+      "lng": -122.0839
+    },
+    "city": "mountain-view"
+  },
+  {
+    "id": 4,
+    "title": "INFORMS San Francisco Chapter In-Person Event",
+    "description": "INFORMS San Francisco Chapter In-Person Event",
+    "date": "2024-03-29T00:00:00.000Z",
+    "image": "./images/events/informs-sf.webp",
+    "type": "offline",
+    "attendees": 41,
+    "category": "Health and Wellbeing",
+    "distance": 50,
+    "coords": {
+      "lat": 37.7749,
+      "lng": -122.4194
+    },
+    "city": "mountain-view"
+  },
+  {
+    "id": 5,
+    "title": "AI Wednesdays - Meet and Greet!",
+    "description": "AI Wednesdays - Meet and Greet!",
+    "date": "2024-03-14T01:30:00.000Z",
+    "image": "./images/events/ai-wednesdays.webp",
+    "type": "offline",
+    "attendees": 29,
+    "category": "Technology",
+    "distance": 5,
+    "coords": {
+      "lat": 37.3875,
+      "lng": -122.0575
+    },
+    "city": "mountain-view"
+  },
+  {
+    "id": 6,
+    "title": "ROS By-The-Bay March 2024",
+    "description": "ROS By-The-Bay March 2024",
+    "date": "2024-03-22T01:00:00.000Z",
+    "image": "./images/events/ros-bay.webp",
+    "type": "online",
+    "attendees": 51,
+    "category": "Social Activities",
+    "distance": 0,
+    "coords": {
+      "lat": 37.4848,
+      "lng": -122.1484
+    },
+    "city": "mountain-view"
+  },
+  {
+    "id": 7,
+    "title": "Free Christian Singles' Dinner",
+    "description": "Free Christian Singles' Dinner",
+    "date": "2024-03-30T01:00:00.000Z",
+    "image": "./images/events/christian-singles.webp",
+    "type": "offline",
+    "attendees": 11,
+    "category": "Hobbies and Passions",
+    "distance": 10,
+    "coords": {
+      "lat": 37.3639,
+      "lng": -122.0296
+    },
+    "city": "mountain-view"
+  },
+  {
+    "id": 8,
+    "title": "In-person: Deep Dive into RAG Architectures (Food served)",
+    "description": "In-person: Deep Dive into RAG Architectures (Food served)",
+    "date": "2024-03-15T00:00:00.000Z",
+    "image": "./images/events/rag-architectures.webp",
+    "type": "offline",
+    "attendees": 16,
+    "category": "Hobbies and Passions",
+    "distance": 50,
+    "coords": {
+      "lat": 37.4323,
+      "lng": -122.1212
+    },
+    "city": "mountain-view"
+  },
+  {
+    "id": 1,
+    "title": "INFJ Personality Type - Coffee Shop Meet & Greet",
+    "description": "Being an INFJ",
+    "date": "2024-03-23T15:00:00.000Z",
+    "image": "https://images.unsplash.com/photo-1541167760496-1628856ab772?q=80&w=1037&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "type": "offline",
+    "attendees": 99,
+    "category": "Hobbies and Passions",
+    "distance": 50,
+    "coords": {
+      "lat": 40.6782,
+      "lng": -73.9442
+    },
+    "city": "new-york"
+  },
+  {
+    "id": 2,
+    "title": "NYC AI Users - AI Tech Talks, Demo & Social: RAG Search and Customer Experience",
+    "description": "New York AI Users",
+    "date": "2024-03-23T11:30:00.000Z",
+    "image": "https://images.unsplash.com/photo-1696258686454-60082b2c33e2?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "type": "offline",
+    "attendees": 43,
+    "category": "Technology",
+    "distance": 25,
+    "coords": {
+      "lat": 40.7306,
+      "lng": -73.9352
+    },
+    "city": "new-york"
+  },
+  {
+    "id": 3,
+    "title": "Book 40+ Appointments Per Month Using AI and Automation",
+    "description": "New Jersey Business Network",
+    "date": "2024-03-16T14:00:00.000Z",
+    "image": "https://images.unsplash.com/photo-1674027444485-cec3da58eef4?q=80&w=1032&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "type": "online",
+    "attendees": 0,
+    "category": "Technology",
+    "distance": 10,
+    "coords": {
+      "lat": 40.7357,
+      "lng": -74.1724
+    },
+    "city": "new-york"
+  },
+  {
+    "id": 4,
+    "title": "Dump writing group weekly meetup",
+    "description": "Dump writing group",
+    "date": "2024-03-13T11:00:00.000Z",
+    "image": "https://plus.unsplash.com/premium_photo-1678453146992-b80d66df9152?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "type": "online",
+    "attendees": 77,
+    "category": "Business",
+    "distance": 100,
+    "coords": {
+      "lat": 40.9176,
+      "lng": -74.3065
+    },
+    "city": "new-york"
+  },
+  {
+    "id": 5,
+    "title": "Over 40s, 50s, & 60s Senior Singles Chat, Meet & Dating Community",
+    "description": "Over 40s, 50s, 60s Singles Chat, Meet & Dating Community",
+    "date": "2024-03-14T11:00:00.000Z",
+    "image": "https://plus.unsplash.com/premium_photo-1706005542509-a460d6efecb0?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "type": "online",
+    "attendees": 140,
+    "category": "Social Activities",
+    "distance": 74,
+    "coords": {
+      "lat": 40.7982,
+      "lng": -74.3877
+    },
+    "city": "new-york"
+  },
+  {
+    "id": 6,
+    "title": "All Nations - Manhattan Missions Church Bible Study",
+    "description": "Manhattan Bible Study Meetup Group",
+    "date": "2024-03-14T11:00:00.000Z",
+    "image": "https://plus.unsplash.com/premium_photo-1679488248784-65a638a3d3fc?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "type": "offline",
+    "attendees": 0,
+    "category": "Health and Wellbeing",
+    "distance": 15,
+    "coords": {
+      "lat": 40.7831,
+      "lng": -73.9712
+    },
+    "city": "new-york"
+  }
+]
