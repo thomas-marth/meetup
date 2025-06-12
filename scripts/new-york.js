@@ -7,7 +7,8 @@ const minimizeMapBtn = document.getElementById("minimize-map-btn");
 const typeFilter = document.getElementById("filter-type");
 const distanceFilter = document.getElementById("filter-distance");
 const categoryFilter = document.getElementById("filter-category");
-const allFilters = [typeFilter, distanceFilter, categoryFilter];
+const dateFilter = document.getElementById("filter-date");
+const allFilters = [typeFilter, distanceFilter, categoryFilter, dateFilter];
 
 const PLACEHOLDER_IMG = "../images/events/loading.webp";
 
@@ -26,6 +27,25 @@ async function fetchEvents() {
       eventsData = eventsStore;
     }
   }
+}
+
+function populateDateOptions() {
+  const unique = Array.from(
+    new Set(eventsData.map((ev) => ev.date.toISOString().slice(0, 10)))
+  ).sort();
+
+  dateFilter.innerHTML = '<option value="any">Any date</option>';
+  unique.forEach((str) => {
+    const d = new Date(str);
+    const month = d
+      .toLocaleString("en-US", { month: "short", timeZone: "UTC" })
+      .toUpperCase();
+    const day = d.getUTCDate();
+    const opt = document.createElement("option");
+    opt.value = str;
+    opt.textContent = `${day} ${month}`;
+    dateFilter.appendChild(opt);
+  });
 }
 
 function renderLoadingPlaceholders(count = 3) {
@@ -132,6 +152,7 @@ function applyFilters() {
   const type = typeFilter.value;
   const distance = distanceFilter.value;
   const category = categoryFilter.value;
+  const dateVal = dateFilter.value;
 
   if (type !== "any") filtered = filtered.filter((e) => e.type === type);
   if (category !== "any")
@@ -139,6 +160,11 @@ function applyFilters() {
   if (distance !== "any") {
     const dist = parseInt(distance);
     filtered = filtered.filter((e) => e.distance && e.distance <= dist);
+  }
+  if (dateVal !== "any") {
+    filtered = filtered.filter(
+      (e) => e.date.toISOString().slice(0, 10) === dateVal
+    );
   }
 
   renderEvents(filtered);
@@ -187,5 +213,6 @@ allFilters.forEach((select) => {
 document.addEventListener("DOMContentLoaded", async () => {
   renderLoadingPlaceholders();
   await fetchEvents();
+  populateDateOptions();
   applyFilters();
 });
