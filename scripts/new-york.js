@@ -9,6 +9,43 @@ const distanceFilter = document.getElementById("filter-distance");
 const categoryFilter = document.getElementById("filter-category");
 const allFilters = [typeFilter, distanceFilter, categoryFilter];
 
+const PLACEHOLDER_IMG = "../images/events/loading.webp";
+
+let eventsData = [];
+
+async function fetchEvents() {
+  try {
+    const resp = await fetch("../data/ny-events.json");
+    if (!resp.ok) throw new Error("Network response was not ok");
+    const data = await resp.json();
+    await new Promise((res) => setTimeout(res, 800));
+    eventsData = data.map((ev) => ({ ...ev, date: new Date(ev.date) }));
+  } catch (err) {
+    console.log("Failed to fetch events, using fallback", err);
+    if (typeof eventsStore !== "undefined") {
+      eventsData = eventsStore;
+    }
+  }
+}
+
+function renderLoadingPlaceholders(count = 3) {
+  eventList.innerHTML = "";
+  for (let i = 0; i < count; i++) {
+    const placeholder = `
+      <article class="event-card">
+        <div class="image-overlay">
+          <img src="${PLACEHOLDER_IMG}" alt="Loading" class="event-image" />
+        </div>
+        <div class="event-content">
+          <div class="event-time"><span>Loading...</span></div>
+          <h3 class="event-title">Loading...</h3>
+        </div>
+      </article>
+    `;
+    eventList.insertAdjacentHTML("beforeend", placeholder);
+  }
+}
+
 let map;
 let markers = [];
 let mapInitialized = false;
@@ -29,6 +66,22 @@ function updateMapMarkers(eventsToRender) {
       markers.push(marker);
     }
   });
+}
+
+function formatEventDate(date) {
+  const options = {
+    weekday: "short",
+    month: "short",
+    day: "numeric",
+    hour: "numeric",
+    minute: "2-digit",
+    hour12: true,
+    timeZone: "UTC",
+  };
+
+  let formatted = date.toLocaleString("en-US", options);
+  formatted = formatted.replace(/, (?=[^,]*$)/, " \u00B7 ");
+  return `${formatted} UTC`;
 }
 
 function renderEvents(filteredEvents) {
@@ -52,9 +105,7 @@ function renderEvents(filteredEvents) {
       ev.title
     }" class="event-image" /></div>
         <div class="event-content">
-          <div class="event-time"><span>${ev.date
-            .toUTCString()
-            .slice(0, 22)}</span></div>
+          <div class="event-time"><span>${formatEventDate(ev.date)}</span></div>
           <h3 class="event-title">${ev.title}</h3>
           ${distanceText}
           <div class="event-attendees">${attendeesText}</div>
@@ -77,7 +128,7 @@ function updateFilterStyles() {
 }
 
 function applyFilters() {
-  let filtered = eventsStore;
+  let filtered = eventsData;
   const type = typeFilter.value;
   const distance = distanceFilter.value;
   const category = categoryFilter.value;
@@ -133,6 +184,8 @@ allFilters.forEach((select) => {
   });
 });
 
-document.addEventListener("DOMContentLoaded", () => {
+document.addEventListener("DOMContentLoaded", async () => {
+  renderLoadingPlaceholders();
+  await fetchEvents();
   applyFilters();
 });
