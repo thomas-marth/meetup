@@ -190,6 +190,25 @@ input[type="search"]::-webkit-search-cancel-button {
   appearance: none;
 }
 
+input::-webkit-calendar-picker-indicator,
+input::-webkit-search-decoration,
+input::-webkit-search-cancel-button,
+input::-webkit-search-results-button,
+input::-webkit-search-results-decoration {
+  display: none;
+}
+
+input[list] {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+input[list]::-webkit-calendar-picker-indicator {
+  opacity: 0;
+  pointer-events: none;
+}
+
 .search-group-desktop #keyword-bar-in-search {
   padding-left: 2.5rem;
   border-right: none;
